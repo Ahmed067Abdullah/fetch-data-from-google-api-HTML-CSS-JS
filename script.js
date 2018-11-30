@@ -128,13 +128,12 @@ const saveData = () => {
       existingRecords = JSON.parse(localStorageData);
 
       // filter the currently fetched data from stored in bigData array, only save a record if a matched ID is NOT found in the localStorage
-      let nonRepeatedData = bigData.filter(singleDataSet => {
-        return (
+      let nonRepeatedData = bigData.filter(
+        singleDataSet =>
           existingRecords.find(
             singleExistingRecord => singleDataSet.id === singleExistingRecord.id
           ) === undefined
-        );
-      });
+      );
 
       console.log("existing Records", existingRecords);
       console.log("non repeated", nonRepeatedData);

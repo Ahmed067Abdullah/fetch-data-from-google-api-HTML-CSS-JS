@@ -25,7 +25,6 @@
         <p>You need to provide latitutde & longitude coordinates and 60 resturents nearest to those coordinates would be stored in your browser's localStorage with key "places". You can add more places to the list, repeated places would not be stored again. You can get the JSON file whenver you want by clicking on "Get JSON file" button at the top left side. In case of any error, read details in the console</p>
         <form class="input-form" method="post" onsubmit="return initFetching()">
           <div class="input-container">
-            <!-- <label class="input-label" for="lat">Latitutde (24 wala)</label> -->
             <label class="input-label" for="lat">Latitutde</label>
             <input
               type="text"
@@ -41,7 +40,6 @@
           </div>
 
           <div class="input-container">
-            <!-- <label class="input-label" for="lng">Longitude (67 wala)</label> -->
             <label class="input-label" for="lng">Longitude</label>
             <input
               type="text"
@@ -55,7 +53,6 @@
               onblur="unFocused('lng')"
             />
           </div>
-          <!-- onclick="formSubmitted()" -->
           <div class="submit-container">
             <button type="submit" class="submit-button">
               Fetch &nbsp
